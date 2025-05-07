@@ -70,3 +70,7 @@ h1 {
   height: 100%;
   border: none;
 }
+.logo {
+  width: 140px;
+  display: block;
+}

@@ -66,3 +66,7 @@ h1 {
   border: none;
 }
 
+.logo {
+  width: 140px;
+  display: block;
+}
