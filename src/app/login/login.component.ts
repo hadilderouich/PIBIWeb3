@@ -33,13 +33,13 @@ export class LoginComponent {
   onSubmit(): void {
     const email = this.email.toLowerCase();
     if (!this.allowedEmails.hasOwnProperty(email)) {
-      this.error = 'Invalid email address';
+      this.error = 'This email address is not registered. Please contact the administrator for access.';
       return;
     }
 
     const correctPassword = this.allowedEmails[email];
     if (this.password !== correctPassword) {
-      this.error = 'Invalid password';
+      this.error = 'Incorrect password. Please try again.';
       return;
     }
 
