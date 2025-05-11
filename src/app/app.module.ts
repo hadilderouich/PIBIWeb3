@@ -6,6 +6,7 @@ import { Copie1Component } from './dashboard/copie1/copie1.component';
 import { Copie2Component } from './dashboard/copie2/copie2.component';
 import { Copie3Component } from './dashboard/copie3/copie3.component';
 import { AuthGuard } from './auth.guard';
+import { EmotionDetectionService } from './services/emotion-detection.service';
 
 const routes: Routes = [
   { path: '', redirectTo: '/login', pathMatch: 'full' },
@@ -32,5 +33,8 @@ export const appConfig = {
     Copie2Component,
     Copie3Component,
     AuthGuard
+  ],
+  providers: [
+    EmotionDetectionService
   ]
 };
